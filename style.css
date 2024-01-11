@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background: #080808;
+    color:#fff;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Prel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 5px 10%;
+
+}
+.log{
+    width: 100px;
+    height: 80px; 
+    align-items: left;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+nav ul li {
+    display: inline-block;
+    color: white;
+    list-style: none;
+    margin:10px 20px ;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+   
+    transition: transform 0.5s;
+    
+}
+
+nav ul li a:hover{
+    color: #ff000d;
+    transform: scale(1.1);   
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*nav ul li a{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff000d;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: transform 0.5s;
+    cursor: pointer;
+
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+
+}*/
+
+
+
+
+
+.text{
+    margin-top: 15%;
+    font-size: 30px;
+}
+
+.text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.text span{
+    color: #ff000d;
+}
+/*-----------------about-----------------*/
+#about{
+    padding: 80px 0;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
+
+.Sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+ .bt{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff000d;
+    color: white;
+    border: 1Px solid #ff000d;
+    border-radius:5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.bt:hover{
+    transform: scale(1.1);  
+}
+.about-col-1{
+    margin-top: 30%;
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+    margin-top: 30%;
+}
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background-color: #ff000d;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+
+}
+.tab-contents ul li span{
+    color:#b54769;
+    font-size: 16px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+section {
+    max-width: 800px;
+    margin-top:10%;
+    margin-left: 22%;
+    padding:30px 20px;
+    background-color:black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-item {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  .progress-bar {
+    background-color: #dddddd;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin: 5px 0;
+    overflow: hidden;
+  }
+
+  .progress {
+    background-color:#b54769 ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .progress span {
+    padding: 0 10px;
+    color: #fff;
+  }
+
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  #project{
+    padding:50px 5px;
+    margin-top: 8%;
+    
+
+  }
+  .worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+  }
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.layer{
+   width: 100%;
+   height: 0%;
+   background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+   border-radius: 10px;
+   position: absolute;
+   left:0;
+   bottom: 0;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding:0 40px;
+   text-align: center;
+   font-size: 15px;
+   transition: 0.5s;
+}
+.layer h3{
+    font-weight:500;
+    margin-bottom: 20px;
+    
+}
+.layer a{
+    margin-top:20px;
+    color: #ff004f;
+    text-decoration:none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width:60px;
+    height: 60px;
+    text-align: center;
+    border-radius:50%;
+   
+
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:white ;
+    transition: 0.5s;
+
+}
+.btn:hover{
+    background: #ff004f;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    
+}
+.contact-left p i{
+    color:#ff004d;
+    margin-right: 15px;
+    font-size:30px;
+
+}
+
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration:none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+    
+}
+.social-icons a:hover{
+    color: #ff000d;
+    transform: translateY(-5px);
+}
+.btk{
+   display:block;
+  
+    font-size: 16px;
+    background-color: #ff000d;
+    color: white;
+    border: 1Px solid #ff000d;
+    border-radius:5px;
+    cursor: pointer; 
+    border-radius: 6px;
+    width:fit-content;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form  textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+.contact-left h1{
+    font-size:40px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    margin-top:80px;
+}
+
+.copyright i{
+    color: #ff000d;
+}
+
+.bi-arrow-right-circle-fill {
+    display: none;
+  }
+
+.bi-list {
+    display: none;
+  }
+
+/*css for sall screens*/
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/Prelk.jpg);
+    }
+    .text{
+        margin-top: 100%;
+        font-size: 16px; 
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .text p{
+        margin-top:-50px;
+    }
+
+    /*.bi-arrow-right-circle-fill {
+        display:block;
+      }
+    
+    .bi-list {
+        display: block;
+      }*/
+
+    .bi-arrow-right-circle-fill,
+    .bi-list {
+        display: inline-block;
+      }
+
+    nav.bi{
+        display: block;
+        font-size: 25px;
+    } 
+
+    nav ul{
+        background:#ff000d;
+        position: fixed;
+        top:0;
+        right:-150px;
+        width:150px;
+        height:100vh;
+        padding:50px;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin:25px;
+        margin-right:-200px;
+        /*margin-right: 250px;*/
+
+    }
+    .bi-arrow-right-circle-fill {
+        
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+   .Sub-title{
+    font-size: 40px;
+
+   }
+   .about-col-1,.about-col-2{
+    flex-basis: 100%;
+   
+   
+   }
+   .about-col-1 img{
+    margin-top: 100px;
+   
+   }
+   .about-col-2{
+    font-size: 14px;
+    position: relative;
+    top:-63px;
+    
+
+   }
+  
+   
+   .tab-links{
+    font-size: 17px;
+   }
+   section{
+    flex-basis: 100%;
+    margin-top:100px;
+    position: relative;
+    left:-40px;
+    top: -120px;
+    
+   }
+   .contact-left,.contact-right{
+    flex-basis: 100%;
+   }
+   .copyright{
+    font-size: 14px;
+   }
+   
+}
+
+
+#sg{
+    color: #61b752;
+    margin-top:-70px;
+    display: block;
+}

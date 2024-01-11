@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logm.PNG" class="log">
+        <ul id="sidenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bi bi-arrow-right-circle-fill" onclick="closenu()"></i>
+        </ul>
+        <i class="bi bi-list" onclick="openenu()"></i>
+
+
+
+      </nav>
+      <div class="text">
+        <p>Software Engineer</p>
+        <h1>Hi, I'm <span>Prem</span> Chikane,<br>from India...... </h1><br>
+        <buttton
+          onclick="window.location.href='https://drive.google.com/drive/folders/1XuCK88XVuRl4abYLwTGRhVOt89blNQD0'"
+          class="bt" download="Prem_cv">Download CV</buttton>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png">
+
+
+          </div>
+          <div class="about-col-2">
+            <h1 class="Sub-title">About me</h1>
+            <p>A true hustler, a quick learner. 
+            Transforming ideas into captivating products is my power, bringing eﬃciency & innovation to the complex problems. 
+            Eager to learn and implement new technologies and Methodologies.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li><span>2021-2023</span><br>Masters in computer science <br>9.71 CGPA</li>
+                <li><span>2018-2021</span><br>Bachelors in computer science <br>7.65 CGPA</li>
+                <li><span>2018</span><br>HSC <br>62.32 %</li>
+                <li><span>2016</span><br>SSC <br>90.60%</li>
+
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>January 2023 - July 2023</span><br>Software support engineer <br>Company- Radio Computing
+                  services,India</li>
+                <li><span>October 2022- December</span><br>Web devlopment Internship (Virtual) <br>Company- Acmegrade
+                </li>
+                <li><span>June 2022- August</span><br>Python Development Internship (Virtual) <br>Company-Azure Skynet
+                  pvt ltd</li>
+                <li><span>January 2022 - April</span><br>Graphic Designer<br>Company-Lawocals</li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skill">
+      <section>
+        <h1> Skills</h1>
+
+        <div class="skills">
+          <div class="skill-item">
+            <div class="icon">&#128187;</div>
+            <div class="skill-name">HTML</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="icon">&#128187;</div>
+            <div class="skill-name">CSS</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="icon">&#128187;</div>
+            <div class="skill-name">JavaScript</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%;">
+                <span>60%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="icon">&#128187;</div>
+            <div class="skill-name">Python</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="icon">&#128187;</div>
+            <div class="skill-name">Java</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;">
+                <span>60%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div id="project">
+      <div class="container">
+        <h1 class="Sub-title">Work</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>Ecommerce Website</h3>
+              <p>jdnsdjan jndssndn jnsdansn jsnncsnnjnj</p>
+              <a href="https://github.com/premsant/shopy--ecommerce-webapp"><i class="bi bi-box-arrow-up-right"></i>
+
+              </a>
+            </div>
+          </div>
+          <div class="work">+
+            <img src="images/auto.PNG" height="92%">
+            <div class="layer">
+              <h3>Smart home automation system with Door lock security</h3>
+              <p>Its a  arduino based smart home automation system project where you can control your  home appliances with the help of Android app</p>
+              <a href="https://github.com/premsant/Smart-home-Automation-System-App"><i class="bi bi-box-arrow-up-right"></i>
+
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+              <h3>Random App</h3>
+              <p>ndjdnj dkndefn kefkefc keflwlf</p>
+              <a href="https://github.com/premsant/"><i class="bi bi-box-arrow-up-right"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/premsant/" class="btn">See more</a>
+
+
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact me</h1>
+            <p><i class="bi bi-send-fill"></i>premchikane@07gmail.com</p>
+            <p><i class="bi bi-phone-fill"></i>7977592785</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+              <a href="http://www.linkedin.com/in/premchikane-342193lb6"><i class="bi bi-linkedin"></i>
+              </a>
+
+
+            </div>
+
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your name" required>
+              <input type="email" name="Email" placeholder="your email" required>
+              <textarea name="message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btk">Submit</button>
+
+            </form>
+            <span id="sg"></span>
+            </span>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @Prem. Developed with<i class="bi bi-heart-fill"></i>by Prem Chikane</p>
+      </div>
+    </div>
+
+    <script>
+      var side=document.getElementById("sidenu");
+      function openenu(){
+        side.style.right="0";
+
+      }
+      function closenu(){
+        side.style.right="-150px";
+        
+      }
+
+    </script>
+
+
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabne) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabne).classList.add("active-tab");
+
+      }
+
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbypQZQLRAB-_McHVMqMnbs3IFIzdS75W40RAyzGk7d0TwbJHW_-KJpiG5BQ_hASUnDKwQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const sg = document.getElementById("sg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        sg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          sg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+
+</html>
